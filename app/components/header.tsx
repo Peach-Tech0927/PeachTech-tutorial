@@ -18,7 +18,15 @@ const Header = () => {
           height={50}
           alt="peachtechのアイコン"
         />
-        <Typography m={"0 auto"} color={"black"} fontSize={20} fontWeight={"bold"} letterSpacing={0.2}>PeachTechチュートリアル</Typography>
+        <Typography
+          m={{xs:0, sm:"0 auto"}}
+          color={"black"}
+          fontSize={{ xs: 15, md: 20 }}
+          fontWeight={"bold"}
+          letterSpacing={0.2}
+        >
+          PeachTechチュートリアル
+        </Typography>
       </Toolbar>
     </AppBar>
   );
