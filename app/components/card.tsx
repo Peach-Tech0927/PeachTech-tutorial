@@ -5,20 +5,16 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
+import Image from "next/image";
 
 const Card1 = () => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <Typography fontSize={15} fontWeight ={"bold"} component="div">
+        <Typography fontSize={20} component="div">
           この動画を見よう！
         </Typography>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        />
+        <Image src="/sample.png" width={300} height={200} alt="サンプル画像" />
         <CardContent></CardContent>
       </CardActionArea>
     </Card>
