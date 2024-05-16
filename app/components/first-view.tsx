@@ -1,56 +1,81 @@
-import { Box, Button, Typography } from "@mui/material";
+"use client";
+import { Box, Button, Typography, styled } from "@mui/material";
 import Image from "next/image";
-import * as React from "react";
 
 const FirstView = () => {
   return (
     <Box
-      height={630}
+      height={{ xs: 530, md: 630 }}
       position={"relative"}
       sx={{
         bgcolor: "#CECECE",
         backgroundImage: `url("/img/seikei-library.jpeg")`,
+        backgroundSize: "cover",
+        backgroundPositionX: "center",
+        backgroundPositionY: "40%",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <Box
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
         position={"absolute"}
         width={"100%"}
         height={"100%"}
         sx={{ WebkitBackdropFilter: "blue(8px)", backdropFilter: "blur(8px)" }}
       >
-        <Typography fontSize={30} position={"absolute"} top={215} left={230}>
+        <Typography
+          fontSize={{ xs: 22, md: 30 }}
+          position={"absolute"}
+          top={{ xs: 360, md: 215 }}
+          left={{ md: 230 }}
+        >
           PeachTechへようこそ！
         </Typography>
         <Button
           sx={{
-            width: 160,
+            width: { xs: 120, md: 160 },
             color: "white",
             bgcolor: "#4AC3CB",
             position: "absolute",
-            top: 340,
-            left: 310,
+            top: { xs: 430, md: 340 },
+            left: { md: 310 },
             "&:hover": {
               background: "#F9A9A9",
             },
           }}
         >
-          <Typography fontSize={21}>はじめる</Typography>
+          <Typography fontSize={{ xs: 15, md: 21 }}>はじめる</Typography>
         </Button>
-        <Image
+        <StyledImage
           width={560}
           height={370}
           src={"/img/seikei-library.jpeg"}
           alt={"image-first-view"}
-          style={{
-            position: "absolute",
-            top: 115,
-            right: 120,
-            borderRadius: 18,
-          }}
         />
       </Box>
     </Box>
   );
 };
+
+const StyledImage = styled(Image)(({ theme }) => ({
+  [theme.breakpoints.up("md")]: {
+    position: "absolute",
+    width: 560,
+    height: 370,
+    top: 115,
+    right: 120,
+    borderRadius: 18,
+  },
+  [theme.breakpoints.down("md")]: {
+    position: "absolute",
+    width: 340,
+    height: 235,
+    top: 60,
+    borderRadius: 7,
+  },
+}));
 
 export default FirstView;
