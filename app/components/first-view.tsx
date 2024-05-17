@@ -5,14 +5,12 @@ import Image from "next/image";
 const FirstView = () => {
   return (
     <Box
-      height={{ xs: 530, md: 630 }}
+      height={{ xs: "65vh", md: "80vh" }}
       position={"relative"}
+      bgcolor={"#CECECE"} //いらないかも
       sx={{
-        bgcolor: "#CECECE",
         backgroundImage: `url("/img/seikei-library.jpeg")`,
         backgroundSize: "cover",
-        backgroundPositionX: "center",
-        backgroundPositionY: "40%",
         backgroundRepeat: "no-repeat",
       }}
     >
@@ -61,14 +59,11 @@ const FirstView = () => {
 };
 
 const StyledImage = styled(Image)(({ theme }) => ({
-  [theme.breakpoints.up("md")]: {
-    position: "absolute",
-    width: 560,
-    height: 370,
-    top: 115,
-    right: 120,
-    borderRadius: 18,
-  },
+  position: "absolute",
+  top: 115,
+  right: 120,
+  borderRadius: 18,
+
   [theme.breakpoints.down("md")]: {
     position: "absolute",
     width: 340,
