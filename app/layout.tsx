@@ -17,8 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{ margin: 0 }}>
-        <Header/>
-        {children}</body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
