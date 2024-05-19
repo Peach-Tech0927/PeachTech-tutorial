@@ -6,70 +6,77 @@ const FirstView = () => {
   return (
     <Box
       height={{ xs: "65vh", md: "80vh" }}
-      position={"relative"}
-      bgcolor={"#CECECE"} //いらないかも
       sx={{
         backgroundImage: `url("/img/seikei-library.jpeg")`,
         backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
       }}
     >
       <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        position={"absolute"}
         width={"100%"}
         height={"100%"}
         sx={{ WebkitBackdropFilter: "blue(8px)", backdropFilter: "blur(8px)" }}
       >
-        <Typography
-          fontSize={{ xs: 22, md: 30 }}
-          position={"absolute"}
-          top={{ xs: 360, md: 215 }}
-          left={{ md: 230 }}
+        <Box
+          height={"100%"}
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"center"}
+          flexDirection={{ xs: "column-reverse", md: "row" }}
+          mx={{ md: 7 }} //2つのBoxを横並びにする
         >
-          PeachTechへようこそ！
-        </Typography>
-        <Button
-          sx={{
-            width: { xs: 120, md: 160 },
-            color: "white",
-            bgcolor: "#4AC3CB",
-            position: "absolute",
-            top: { xs: 430, md: 340 },
-            left: { md: 310 },
-            "&:hover": {
-              background: "#F9A9A9",
-            },
-          }}
-        >
-          <Typography fontSize={{ xs: 15, md: 21 }}>はじめる</Typography>
-        </Button>
-        <StyledImage
-          width={560}
-          height={370}
-          src={"/img/seikei-library.jpeg"}
-          alt={"image-first-view"}
-        />
+          <Box
+            width={"100%"}
+            display={"flex"}
+            alignItems={"center"}
+            justifyContent={"center"}
+            flexDirection={"column"} //TypographyとButtonを縦並びにする
+            m={{ xs: 6, md: 0 }}
+          >
+            <Typography fontSize={{ xs: 22, md: 30 }} my={{ xs: 2, md: 3 }}>
+              PeachTechへようこそ！
+            </Typography>
+            <Button
+              sx={{
+                px: { xs: 1, md: 3 },
+                my: { xs: 1, md: 3 },
+                color: "white",
+                bgcolor: "#4AC3CB",
+                fontSize: { xs: 15, md: 21 },
+                "&:hover": {
+                  background: "#01B1BC",
+                },
+              }}
+            >
+              はじめる
+            </Button>
+          </Box>
+          <Box
+            width={"100%"}
+            display={"flex"}
+            alignItems={"center"}
+            justifyContent={"center"}
+          >
+            <StyledImage
+              width={560}
+              height={370}
+              src={"/img/seikei-library.jpeg"}
+              alt={"image-first-view"}
+            />
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
 };
 
 const StyledImage = styled(Image)(({ theme }) => ({
-  position: "absolute",
-  top: 115,
-  right: 120,
   borderRadius: 18,
-
   [theme.breakpoints.down("md")]: {
-    position: "absolute",
     width: 340,
     height: 235,
-    top: 60,
     borderRadius: 7,
+    margin: 15,
   },
 }));
 
