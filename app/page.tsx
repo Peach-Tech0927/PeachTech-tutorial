@@ -1,6 +1,11 @@
+import ThumbnailCardArea from "./components/thumbnail-card-area";
 
-export default function Home() {
+const Home = () =>{
   return (
-    <div>test</div>
+    <>
+      <ThumbnailCardArea />
+    </>
   );
 }
+
+export default Home;
