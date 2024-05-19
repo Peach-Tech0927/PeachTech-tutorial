@@ -1,0 +1,81 @@
+"use client";
+import { Box, Button, Typography, styled } from "@mui/material";
+import Image from "next/image";
+
+const FirstView = () => {
+  return (
+    <Box
+      height={{ xs: "65vh", md: "80vh" }}
+      sx={{
+        backgroundImage: `url("/img/seikei-library.jpeg")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <Box
+        width={"100%"}
+        height={"100%"}
+        sx={{ WebkitBackdropFilter: "blue(8px)", backdropFilter: "blur(8px)" }}
+      >
+        <Box
+          height={"100%"}
+          display={"flex"}
+          flexDirection={{ xs: "column-reverse", md: "row" }}
+          mx={{ md: 7 }} //2つのBoxを横並びにする
+        >
+          <Box
+            width={"100%"}
+            display={"flex"}
+            alignItems={"center"}
+            justifyContent={"center"}
+            flexDirection={"column"} //TypographyとButtonを縦並びにする
+            m={{ xs: 6, md: 0 }}
+          >
+            <Typography fontSize={{ xs: 22, md: 30 }} my={{ xs: 2, md: 3 }}>
+              PeachTechへようこそ！
+            </Typography>
+            <Button
+              sx={{
+                px: { xs: 1, md: 3 },
+                my: { xs: 1, md: 3 },
+                color: "white",
+                bgcolor: "#4AC3CB",
+                fontSize: { xs: 15, md: 21 },
+                "&:hover": {
+                  background: "#01B1BC",
+                },
+              }}
+            >
+              はじめる
+            </Button>
+          </Box>
+          <Box
+            width={"100%"}
+            display={"flex"}
+            alignItems={"center"}
+            justifyContent={"center"}
+          >
+            <StyledImage
+              width={560}
+              height={370}
+              src={"/img/seikei-library.jpeg"}
+              alt={"image-first-view"}
+            />
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  );
+};
+
+const StyledImage = styled(Image)(({ theme }) => ({
+  borderRadius: 18,
+  [theme.breakpoints.down("md")]: {
+    width: 340,
+    height: 235,
+    borderRadius: 7,
+    margin: 15,
+  },
+}));
+
+export default FirstView;
