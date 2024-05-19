@@ -1,9 +1,13 @@
 import FirstView from "./components/first-view";
+import ThumbnailCardArea from "./components/thumbnail-card-area";
 
-export default function Home() {
+const Home = () =>{
   return (
     <>
       <FirstView />
+      <ThumbnailCardArea />
     </>
   );
 }
+
+export default Home;
