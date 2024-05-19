@@ -1,4 +1,3 @@
-import * as React from "react";
 import Grid from "@mui/material/Grid";
 import { cardData } from "../const/card-data";
 import ThumbnailCard from "./thumbnail-card";
