@@ -20,8 +20,6 @@ const FirstView = () => {
         <Box
           height={"100%"}
           display={"flex"}
-          alignItems={"center"}
-          justifyContent={"center"}
           flexDirection={{ xs: "column-reverse", md: "row" }}
           mx={{ md: 7 }} //2つのBoxを横並びにする
         >
