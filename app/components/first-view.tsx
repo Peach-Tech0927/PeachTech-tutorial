@@ -5,6 +5,7 @@ import Image from "next/image";
 const FirstView = () => {
   return (
     <Box
+      position={"relative"}
       height={{ xs: "65vh", md: "80vh" }}
       sx={{
         backgroundImage: `url("/img/seikei-library.jpeg")`,
@@ -13,13 +14,14 @@ const FirstView = () => {
       }}
     >
       <Box
-        width={"100%"}
         height={"100%"}
         sx={{ WebkitBackdropFilter: "blue(8px)", backdropFilter: "blur(8px)" }}
       >
         <Box
           height={"100%"}
           display={"flex"}
+          alignItems={"center"}
+          justifyContent={"center"}
           flexDirection={{ xs: "column-reverse", md: "row" }}
           mx={{ md: 7 }} //2つのBoxを横並びにする
         >
@@ -29,7 +31,7 @@ const FirstView = () => {
             alignItems={"center"}
             justifyContent={"center"}
             flexDirection={"column"} //TypographyとButtonを縦並びにする
-            m={{ xs: 6, md: 0 }}
+            mt={{ xs: 6, md: 0 }}
           >
             <Typography fontSize={{ xs: 22, md: 30 }} my={{ xs: 2, md: 3 }}>
               PeachTechへようこそ！
