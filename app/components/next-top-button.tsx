@@ -3,7 +3,9 @@ import { Box, Button, Typography } from "@mui/material";
 const NextTopbutton = () => {
   return (
     <Box display="flex">
-      <Button sx={{ color: "#5f82ff", ml: { xs: 1, md: 3 } }}>Topへ戻る</Button>
+      <Button sx={{ color: "#5f82ff", ml: { xs: 1, md: 3 } }}>
+        ＜　Topへ戻る
+      </Button>
       <Box margin="0 0 0 auto">
         <Button
           variant="contained"
