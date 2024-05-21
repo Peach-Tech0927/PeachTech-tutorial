@@ -1,15 +1,20 @@
+import { Box } from "@mui/material";
 import FirstView from "./components/first-view";
-import NextTopbutton from "./components/next-top-button";
+import NextButton from "./components/next-button";
 import ThumbnailCardArea from "./components/thumbnail-card-area";
+import TopButton from "./components/top-button";
 
-const Home = () =>{
+const Home = () => {
   return (
     <>
       <FirstView />
       <ThumbnailCardArea />
-      <NextTopbutton/>
+      <Box display="flex">
+        <TopButton />
+        <NextButton text="次へ" href="/" />
+      </Box>
     </>
   );
-}
+};
 
 export default Home;
