@@ -1,6 +1,6 @@
 import React from "react";
 import VideoView from "../components/video-view";
-import { step1OverViewData } from "../const/over-view-data";
+import { step1OverViewData } from "../const/video-view-data";
 
 const Page = () => {
   return (
