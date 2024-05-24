@@ -7,19 +7,17 @@ export type nextButtonProps = {
 
 const NextButton: React.FC<nextButtonProps> = ({ text, href }) => {
   return (
-    <Box>
-      <Button
-        variant="contained"
-        href={href}
-        sx={{
-          bgcolor: "#5f82ff",
-          mr: { xs: 1, md: 3 },
-          borderRadius: 2,
-        }}
-      >
-        {text}
-      </Button>
-    </Box>
+    <Button
+      variant="contained"
+      href={href}
+      sx={{
+        bgcolor: "#5f82ff",
+        mr: { xs: 1, md: 3 },
+        borderRadius: 2,
+      }}
+    >
+      {text}
+    </Button>
   );
 };
 
