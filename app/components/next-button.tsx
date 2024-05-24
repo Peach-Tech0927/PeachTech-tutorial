@@ -7,7 +7,7 @@ export type nextButtonProps = {
 
 const NextButton: React.FC<nextButtonProps> = ({ text, href }) => {
   return (
-    <Box margin="0 0 0 auto">
+    <Box>
       <Button
         variant="contained"
         href={href}
