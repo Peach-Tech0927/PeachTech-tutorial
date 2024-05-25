@@ -8,6 +8,7 @@ const VideoView: React.FC<VideoPageProps> = ({
   detail,
   img,
   overView,
+  href,
 }) => {
   return (
     <Box px={{ xs: 2, md: 35 }} py={{ xs: 1.5, md: 5 }} bgcolor={"#fff7f7"}>
@@ -15,7 +16,7 @@ const VideoView: React.FC<VideoPageProps> = ({
         bgcolor={"white"}
         boxShadow={"0.5px 1px 5px -2px gray"}
         borderRadius={1}
-        sx={{ p: { xs: 3, md: 6 } }}
+        p={{ xs: 3, md: 6 }}
       >
         <Box borderBottom={1} borderColor={"#c9c9c9"} display={"flex"} p={0.5}>
           <Typography
@@ -49,26 +50,30 @@ const VideoView: React.FC<VideoPageProps> = ({
             position={"relative"}
             display={"flex"}
             justifyContent={"center"}
-            mx={{ xs: 4 }}
+            mx={3}
           >
             <Image
               src={img}
-              alt={""}
+              alt={"thumbnail-1"}
               width={500}
               height={300}
-              layout="intrinsic"
-              style={{ objectFit: "contain" }}
+              //   layout="intrinsic"
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
             <Button
               variant="contained"
               sx={{
                 px: { xs: 3, md: 4 },
-                py: { md: 1 },
+                py: 1,
                 fontSize: { xs: 14, md: 17 },
                 position: "absolute",
                 bottom: { xs: 22, md: 40 },
                 zIndex: 1,
               }}
+              href={href}
             >
               動画を見る
             </Button>

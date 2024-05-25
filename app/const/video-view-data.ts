@@ -4,6 +4,7 @@ export type VideoPageProps = {
   detail: string;
   img: string;
   overView: string[];
+  href: string;
 };
 
 export const step1OverViewData: VideoPageProps = {
@@ -18,4 +19,5 @@ export const step1OverViewData: VideoPageProps = {
     "もくもく部屋の紹介",
     "自己紹介",
   ],
+  href: "/",
 };
