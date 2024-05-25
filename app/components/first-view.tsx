@@ -8,7 +8,7 @@ const FirstView = () => {
       position={"relative"}
       height={{ xs: "65vh", md: "80vh" }}
       sx={{
-        backgroundImage: `url("/img/seikei-library.jpeg")`,
+        backgroundImage: `url("/seikei-library.jpeg")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
