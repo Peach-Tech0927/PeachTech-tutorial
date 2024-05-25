@@ -32,9 +32,9 @@ const VideoView: React.FC<VideoPageProps> = ({
         </Box>
         <Typography
           py={{ xs: 2, md: 3 }}
-          px={{ xs: 1, md: 1 }}
+          px={1}
           mb={{ xs: 3, md: 4 }}
-          fontSize={{ xs: 14, md: 16.5 }}
+          fontSize={{ xs: 14, md: 17 }}
         >
           {detail}
           <br />
@@ -57,7 +57,6 @@ const VideoView: React.FC<VideoPageProps> = ({
               alt={"thumbnail-1"}
               width={500}
               height={300}
-              //   layout="intrinsic"
               style={{
                 maxWidth: "100%",
                 height: "auto",
