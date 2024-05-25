@@ -66,6 +66,11 @@ const VideoView: React.FC<VideoPageProps> = ({
             <Button
               variant="contained"
               sx={{
+                color: "white",
+                bgcolor: "#5071E5",
+                "&:hover": {
+                  background: "#3758CD",
+                },
                 px: { xs: 3, md: 4 },
                 py: 1,
                 fontSize: { xs: 14, md: 17 },
