@@ -1,6 +1,8 @@
 import { Box, Button, Typography } from "@mui/material";
 import Image from "next/image";
 import { VideoPageProps } from "../const/video-view-data";
+import TextWithImageArea from "./text-with-image-area";
+import { TextWithImageData } from "../const/text-with-image-data";
 
 const VideoView: React.FC<VideoPageProps> = ({
   step,
@@ -40,11 +42,19 @@ const VideoView: React.FC<VideoPageProps> = ({
           <br />
           見終わったら右下の次へボタンを押して次に進んでください！
         </Typography>
+        {TextWithImageData.map((data) => (
+          <TextWithImageArea
+            title={data.title}
+            detail={data.detail}
+            img={data.img}
+          />
+        ))}
         <Box
           display={"flex"}
           alignItems={"center"}
           justifyContent={"center"}
           flexDirection={"column"}
+          mt={50}
         >
           <Box
             position={"relative"}
