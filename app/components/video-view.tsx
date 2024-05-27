@@ -54,7 +54,6 @@ const VideoView: React.FC<VideoPageProps> = ({
           alignItems={"center"}
           justifyContent={"center"}
           flexDirection={"column"}
-          mt={50}
         >
           <Box
             position={"relative"}

@@ -12,7 +12,7 @@ const TextWithImageArea: React.FC<TextWithImageAreaProps> = ({
       <Typography fontWeight={"bold"} fontSize={{ xs: 15, md: 19 }}>
         {title}
       </Typography>
-      <Typography fontSize={{ xs: 13, md: 16 }} mt={{ xs: 1, md: 1 }}>
+      <Typography fontSize={{ xs: 13, md: 16 }} mt={1}>
         {detail}
       </Typography>
       <Box mx={{ xs: 0, md: 1 }} mt={{ xs: 1, md: 3 }}>
