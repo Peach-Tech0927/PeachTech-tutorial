@@ -8,14 +8,14 @@ const TextWithImageArea: React.FC<TextWithImageAreaProps> = ({
   img,
 }) => {
   return (
-    <Box px={1} mt={7} mb={14}>
-      <Typography fontWeight={"bold"} fontSize={{ xs: 14, md: 19 }}>
+    <Box px={1} mt={7} mb={{ xs: 10, md: 14 }}>
+      <Typography fontWeight={"bold"} fontSize={{ xs: 15, md: 19 }}>
         {title}
       </Typography>
-      <Typography fontSize={{ xs: 14, md: 16 }} mt={1}>
+      <Typography fontSize={{ xs: 13, md: 16 }} mt={{ xs: 1, md: 1 }}>
         {detail}
       </Typography>
-      <Box mx={1} mt={3}>
+      <Box mx={{ xs: 0, md: 1 }} mt={{ xs: 1, md: 3 }}>
         <Image
           width={580}
           height={350}
