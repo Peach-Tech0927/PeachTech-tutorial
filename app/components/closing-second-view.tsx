@@ -1,7 +1,7 @@
 import { Typography, Box } from "@mui/material";
 import Image from "next/image";
 import DecorationBar from "./decoration-bar";
-import CustomButton from "./next-button";
+import CustomButton from "./custom-button";
 
 const ClosingScondView = () => {
   return (
