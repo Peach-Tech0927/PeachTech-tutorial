@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import FinalView from "../components/fimal-view";
+import FinalView from "../components/closing-second-view";
 ;
 
 const pages = () => {
