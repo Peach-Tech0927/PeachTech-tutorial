@@ -1,13 +1,11 @@
-import { Box, Typography } from "@mui/material";
-import FinalView from "../components/closing-second-view";
-;
+import ClosingScondView from "../components/closing-second-view";
 
 const pages = () => {
   return (
     <>
-    <FinalView/>
+      <ClosingScondView />
     </>
-  )
+  );
 };
 
 export default pages;

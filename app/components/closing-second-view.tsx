@@ -23,10 +23,9 @@ const ClosingScondView = () => {
           justifyContent="center"
           alignItems="center"
           bgcolor="white"
-          mx={{ xs: 1, md: 50 }}
+          mx={{ xs: 3, md: 50 }}
           py={4}
           my={3}
-          gap={5}
         >
           <Typography lineHeight={3}>
             ・早くプログラミングを始めたい方

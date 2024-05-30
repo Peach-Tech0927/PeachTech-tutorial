@@ -13,7 +13,7 @@ const DecorationBar: React.FC<decorantionBerProps> = ({ transform }) => {
       bgcolor="#ffe179"
       mb={1}
       sx={{ transform: transform }}
-    ></Box>
+    />
   );
 };
 
