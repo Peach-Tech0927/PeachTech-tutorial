@@ -1,3 +1,5 @@
+//テストページ
+
 import { Box, Typography } from "@mui/material";
 import { VideoPageProps } from "../const/video-view-data";
 import VideoArea from "./video-area";
