@@ -14,10 +14,10 @@ type test = {
 };
 
 export const step5TextWithImagePageData: VideoPageProps = {
-  step: 1,
-  title: "Discordの使い方の動画を見よう！",
+  step: 5,
+  title: "Discordでオンラインが表示されるようにしよう！",
   detail:
-    "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
+    "Discordでは誰が今オンラインになっているかが分かります！自分がdiscordを開いた時にオンラインのマークが出るように設定します！",
   img: "/discord-screenshot.png",
   overView: [
     {
