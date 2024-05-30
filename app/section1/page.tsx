@@ -1,15 +1,15 @@
-import VideoView from "../components/video-view";
-import { step1OverViewData } from "../const/video-view-data";
+import VideoPage from "../components/video-page";
+import { step1VideoPageData } from "../const/video-page-data";
 
 const Page = () => {
   return (
-    <VideoView
-      step={step1OverViewData.step}
-      title={step1OverViewData.title}
-      detail={step1OverViewData.detail}
-      img={step1OverViewData.img}
-      overView={step1OverViewData.overView}
-      href={step1OverViewData.href}
+    <VideoPage
+      step={step1VideoPageData.step}
+      title={step1VideoPageData.title}
+      detail={step1VideoPageData.detail}
+      img={step1VideoPageData.img}
+      overView={step1VideoPageData.overView}
+      href={step1VideoPageData.href}
     />
   );
 };

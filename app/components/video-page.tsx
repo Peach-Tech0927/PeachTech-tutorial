@@ -1,10 +1,9 @@
-//テストページ
-
-import { Box, Typography } from "@mui/material";
-import { VideoPageProps } from "../const/video-view-data";
+import { Box } from "@mui/material";
 import VideoArea from "./video-area";
+import PageTitle from "./page-title";
+import { VideoPageProps } from "../const/video-page-data";
 
-const VideoView: React.FC<VideoPageProps> = ({
+const VideoPage: React.FC<VideoPageProps> = ({
   step,
   title,
   detail,
@@ -20,44 +19,11 @@ const VideoView: React.FC<VideoPageProps> = ({
         borderRadius={1}
         p={{ xs: 3, md: 6 }}
       >
-        <Box borderBottom={1} borderColor={"#c9c9c9"} display={"flex"} p={0.5}>
-          <Typography
-            fontSize={{ xs: 17, md: 23 }}
-            fontWeight={"bold"}
-            mr={{ xs: 1, md: 2 }}
-          >
-            Step{step}
-          </Typography>
-          <Typography fontSize={{ xs: 17, md: 23 }} fontWeight={"bold"}>
-            {title}
-          </Typography>
-        </Box>
-        <Typography
-          py={{ xs: 2, md: 3 }}
-          px={1}
-          mb={{ xs: 3, md: 4 }}
-          fontSize={{ xs: 14, md: 17 }}
-        >
-          {detail}
-          <br />
-          見終わったら右下の次へボタンを押して次に進んでください！
-        </Typography>
+        <PageTitle step={step} title={title} detail={detail} />
         <VideoArea img={img} overView={overView} href={href} />
-        {/* <Button
-          variant="contained"
-          sx={{ position: "absolute", right: 30, bottom: 30 }}
-        >
-          モック
-        </Button>
-        <Button
-          variant="contained"
-          sx={{ position: "absolute", left: 30, bottom: 30 }}
-        >
-          モック
-        </Button> */}
       </Box>
     </Box>
   );
 };
 
-export default VideoView;
+export default VideoPage;

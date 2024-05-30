@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import Image from "next/image";
-import { VideoPageProps } from "../const/video-view-data";
+import { VideoPageProps } from "../const/video-page-data";
 
 type VideoAreaProps = Pick<VideoPageProps, "img" | "href" | "overView">;
 
