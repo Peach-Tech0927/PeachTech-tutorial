@@ -1,25 +1,25 @@
-export type VideoPageProps = {
+export type TextWithImagePageProps = {
   step: number;
   title: string;
   detail: string;
   img: string;
-  overView: test[];
+  explanation: TextWithImageExplanationProps[];
   href: string;
 };
 
-type test = {
+export type TextWithImageExplanationProps = {
   title: string;
   detail: string;
   img: string;
 };
 
-export const step5TextWithImagePageData: VideoPageProps = {
+export const step5TextWithImagePageData: TextWithImagePageProps = {
   step: 5,
   title: "Discordでオンラインが表示されるようにしよう！",
   detail:
     "Discordでは誰が今オンラインになっているかが分かります！自分がdiscordを開いた時にオンラインのマークが出るように設定します！",
   img: "/discord-screenshot.png",
-  overView: [
+  explanation: [
     {
       title: "1.自分のアイコンをクリック",
       detail: "以下の画像の画面で、左下にある自分のアイコンをクリック！",
