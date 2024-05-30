@@ -1,18 +1,17 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Button } from "@mui/material";
 
-export type nextButtonProps = {
+export type CustomButtonProps = {
   text: string;
   href: string;
 };
 
-const NextButton: React.FC<nextButtonProps> = ({ text, href }) => {
+const CustomButton: React.FC<CustomButtonProps> = ({ text, href }) => {
   return (
     <Button
       variant="contained"
       href={href}
       sx={{
         bgcolor: "#5f82ff",
-        mr: { xs: 1, md: 3 },
         borderRadius: 2,
       }}
     >
@@ -21,4 +20,4 @@ const NextButton: React.FC<nextButtonProps> = ({ text, href }) => {
   );
 };
 
-export default NextButton;
+export default CustomButton;

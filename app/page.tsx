@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import FirstView from "./components/first-view";
-import NextButton from "./components/next-button";
+import NextButton from "./components/custom-button";
 import ThumbnailCardArea from "./components/thumbnail-card-area";
 import TopButton from "./components/top-button";
 
