@@ -1,15 +1,13 @@
 import { Box } from "@mui/material";
 import PageTitle from "./page-title";
-import {
-  TextWithImagePageProps,
-  step5TextWithImagePageData,
-} from "../const/text-with-image-page-data";
+import { TextWithImagePageProps } from "../const/text-with-image-page-data";
 import TextWithImageArea from "./text-with-image-area";
 
 const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
   step,
   title,
   detail,
+  explanation,
 }) => {
   return (
     <Box px={{ xs: 2, md: 35 }} py={{ xs: 1.5, md: 5 }} bgcolor={"#fff7f7"}>
@@ -20,7 +18,7 @@ const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
         p={{ xs: 3, md: 6 }}
       >
         <PageTitle step={step} title={title} detail={detail} />
-        {step5TextWithImagePageData.explanation.map((data) => (
+        {explanation.map((data) => (
           <TextWithImageArea
             title={data.title}
             detail={data.detail}
