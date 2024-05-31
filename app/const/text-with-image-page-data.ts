@@ -2,10 +2,10 @@ export type TextWithImagePageProps = {
   step: number;
   title: string;
   detail: string;
-  explanation: TextWithImageExplanationProps[];
+  textWithImageArea: TextWithImageAreaProps[];
 };
 
-export type TextWithImageExplanationProps = {
+export type TextWithImageAreaProps = {
   title: string;
   detail: string;
   img: string;
@@ -16,7 +16,7 @@ export const step5TextWithImagePageData: TextWithImagePageProps = {
   title: "Discordでオンラインが表示されるようにしよう！",
   detail:
     "Discordでは誰が今オンラインになっているかが分かります！自分がdiscordを開いた時にオンラインのマークが出るように設定します！",
-  explanation: [
+  textWithImageArea: [
     {
       title: "1.自分のアイコンをクリック",
       detail: "以下の画像の画面で、左下にある自分のアイコンをクリック！",

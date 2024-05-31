@@ -7,9 +7,7 @@ const Page = () => {
       step={step5TextWithImagePageData.step}
       title={step5TextWithImagePageData.title}
       detail={step5TextWithImagePageData.detail}
-      img={step5TextWithImagePageData.img}
-      explanation={step5TextWithImagePageData.explanation}
-      href={step5TextWithImagePageData.href}
+      textWithImageArea={step5TextWithImagePageData.textWithImageArea}
     />
   );
 };

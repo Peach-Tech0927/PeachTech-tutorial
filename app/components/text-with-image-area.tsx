@@ -1,8 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
-import { TextWithImageExplanationProps } from "../const/text-with-image-page-data";
+import { TextWithImageAreaProps } from "../const/text-with-image-page-data";
 
-const TextWithImageArea: React.FC<TextWithImageExplanationProps> = ({
+const TextWithImageArea: React.FC<TextWithImageAreaProps> = ({
   title,
   detail,
   img,
