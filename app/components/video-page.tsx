@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import VideoArea from "./video-area";
-import PageTitle from "./page-title";
+import PageTitle from "./page-contents";
 import { VideoPageProps } from "../const/video-page-data";
 
 const VideoPage: React.FC<VideoPageProps> = ({

@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import PageTitle from "./page-title";
+import PageTitle from "./page-contents";
 import { TextWithImagePageProps } from "../const/text-with-image-page-data";
 import TextWithImageArea from "./text-with-image-area";
 

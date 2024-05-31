@@ -1,9 +1,12 @@
 import { Box, Typography } from "@mui/material";
-import { VideoPageProps } from "../const/video-page-data";
 
-type PageTitleProps = Pick<VideoPageProps, "step" | "title" | "detail">;
+type TProps = {
+  step: number;
+  title: string;
+  detail: string;
+};
 
-const PageTitle: React.FC<PageTitleProps> = ({ step, title, detail }) => {
+const PageContents: React.FC<TProps> = ({ step, title, detail }) => {
   return (
     <Box>
       <Box borderBottom={1} borderColor={"#c9c9c9"} display={"flex"} p={0.5}>
@@ -32,4 +35,4 @@ const PageTitle: React.FC<PageTitleProps> = ({ step, title, detail }) => {
   );
 };
 
-export default PageTitle;
+export default PageContents;
