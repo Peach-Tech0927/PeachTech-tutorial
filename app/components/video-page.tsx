@@ -8,7 +8,7 @@ const VideoPage: React.FC<VideoPageProps> = ({
   title,
   detail,
   img,
-  overView,
+  contents,
   href,
 }) => {
   return (
@@ -20,7 +20,7 @@ const VideoPage: React.FC<VideoPageProps> = ({
         p={{ xs: 3, md: 6 }}
       >
         <PageTitle step={step} title={title} detail={detail} />
-        <VideoArea img={img} overView={overView} href={href} />
+        <VideoArea img={img} contents={contents} href={href} />
       </Box>
     </Box>
   );

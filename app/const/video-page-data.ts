@@ -3,7 +3,7 @@ export type VideoPageProps = {
   title: string;
   detail: string;
   img: string;
-  overView: string[];
+  contents: string[];
   href: string;
 };
 
@@ -13,7 +13,7 @@ export const step1VideoPageData: VideoPageProps = {
   detail:
     "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
   img: "/discord-screenshot.png",
-  overView: [
+  contents: [
     "timesの説明について",
     "メンターについて",
     "もくもく部屋の紹介",
@@ -28,7 +28,7 @@ export const step2VideoPageData: VideoPageProps = {
   detail:
     "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
   img: "/discord-screenshot.png",
-  overView: [
+  contents: [
     "timesの説明について",
     "メンターについて",
     "もくもく部屋の紹介",

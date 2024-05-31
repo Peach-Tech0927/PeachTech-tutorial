@@ -2,9 +2,9 @@ import { Box, Button, Typography } from "@mui/material";
 import Image from "next/image";
 import { VideoPageProps } from "../const/video-page-data";
 
-type VideoAreaProps = Pick<VideoPageProps, "img" | "href" | "overView">;
+type VideoAreaProps = Pick<VideoPageProps, "img" | "href" | "contents">;
 
-const VideoArea: React.FC<VideoAreaProps> = ({ img, href, overView }) => {
+const VideoArea: React.FC<VideoAreaProps> = ({ img, href, contents }) => {
   return (
     <Box
       display={"flex"}
@@ -62,7 +62,7 @@ const VideoArea: React.FC<VideoAreaProps> = ({ img, href, overView }) => {
         >
           概要
         </Typography>
-        {overView.map((data) => (
+        {contents.map((data) => (
           <Typography fontSize={{ xs: 12, md: 17 }}>・{data}</Typography>
         ))}
       </Box>

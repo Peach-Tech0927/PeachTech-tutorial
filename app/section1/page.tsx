@@ -8,7 +8,7 @@ const Page = () => {
       title={step1VideoPageData.title}
       detail={step1VideoPageData.detail}
       img={step1VideoPageData.img}
-      overView={step1VideoPageData.overView}
+      contents={step1VideoPageData.contents}
       href={step1VideoPageData.href}
     />
   );
