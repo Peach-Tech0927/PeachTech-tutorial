@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import PageTitle from "./page-contents";
 import { TextWithImagePageProps } from "../const/text-with-image-page-data";
 import TextWithImageArea from "./text-with-image-area";
+import PageContents from "./page-contents";
 
 const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
   step,
@@ -17,7 +17,7 @@ const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
         borderRadius={1}
         p={{ xs: 3, md: 6 }}
       >
-        <PageTitle step={step} title={title} detail={detail} />
+        <PageContents step={step} title={title} detail={detail} />
         {textWithImageArea.map((data) => (
           <TextWithImageArea
             title={data.title}
