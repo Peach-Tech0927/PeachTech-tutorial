@@ -13,7 +13,8 @@ const CustomButton: React.FC<CustomButtonProps> = ({ text, href }) => {
       sx={{
         bgcolor: "#5f82ff",
         borderRadius: 2,
-        mr: { xs: 1, md: 3 },
+        px: 3,
+        fontSize: 16,
       }}
     >
       {text}
