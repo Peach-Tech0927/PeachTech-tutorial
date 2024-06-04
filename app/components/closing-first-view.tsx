@@ -5,7 +5,7 @@ const ClosingFirstView = () => {
     <>
       <Box
         position="relative"
-        height={{ xs: 330, md: 660 }}
+        height={{ xs: "45vh", md: "85vh" }}
         sx={{
           backgroundImage: `url("/closing-first.png")`,
           backgroundPosition: "center",
@@ -21,31 +21,25 @@ const ClosingFirstView = () => {
         >
           <Box
             display="flex"
-            position="absolute"
             width={"100%"}
             justifyContent="center"
             alignItems="center"
-            mt={{ xs: 10, md: 20 }}
+            pt={{ xs: 10, md: 20 }}
             sx={{
               flexFlow: "column",
             }}
           >
-            <Typography fontSize={{ xs: 15, md: 25 }} fontWeight="540" mb={2}>
+            <Typography fontSize={{ xs: 15, md: 25 }} mb={2}>
               動画視聴お疲れ様でした！！
             </Typography>
             <Typography
               m="0 auto"
-              fontWeight="540"
               fontSize={{ xs: 15, md: 25 }}
               mb={{ xs: 7.5, md: 15 }}
             >
               PeachTechチュートリアルはこれで完了です！
             </Typography>
-            <Typography
-              m="0 auto"
-              fontWeight="540"
-              fontSize={{ xs: 15, md: 25 }}
-            >
+            <Typography m="0 auto" fontSize={{ xs: 15, md: 25 }}>
               これから一緒に頑張りましょう！！
             </Typography>
           </Box>
