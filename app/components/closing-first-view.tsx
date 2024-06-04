@@ -5,7 +5,7 @@ const ClosingFirstView = () => {
     <>
       <Box
         position="relative"
-        height={{ xs: "45vh", md: "85vh" }}
+        height={{ xs: "45vh", md: "75vh" }}
         sx={{
           backgroundImage: `url("/closing-first.png")`,
           backgroundPosition: "center",
