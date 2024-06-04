@@ -9,10 +9,6 @@ const Home = () => {
     <>
       <FirstView />
       <ThumbnailCardArea />
-      <Box display="flex">
-        <TopButton />
-        <NextButton text="次へ" href="/" />
-      </Box>
     </>
   );
 };

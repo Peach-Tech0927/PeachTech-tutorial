@@ -37,6 +37,7 @@ const FirstView = () => {
               PeachTechへようこそ！
             </Typography>
             <Button
+              href="/section1"
               sx={{
                 px: { xs: 1, md: 3 },
                 my: { xs: 1, md: 3 },
