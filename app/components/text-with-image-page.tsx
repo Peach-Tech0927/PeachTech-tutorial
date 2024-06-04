@@ -29,7 +29,11 @@ const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
             img={data.img}
           />
         ))}
-        <Box display={"flex"} justifyContent={"space-between"}>
+        <Box
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+        >
           <TopButton />
           <CustomButton text={buttonText} href={nextButtonHref} />
         </Box>

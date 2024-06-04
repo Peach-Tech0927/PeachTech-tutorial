@@ -25,7 +25,11 @@ const VideoPage: React.FC<VideoPageProps> = ({
       >
         <PageContents step={step} title={title} detail={detail} />
         <VideoArea img={img} contents={contents} href={href} />
-        <Box display={"flex"} justifyContent={"space-between"}>
+        <Box
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+        >
           <TopButton />
           <CustomButton text={buttonText} href={nextButtonHref} />
         </Box>
