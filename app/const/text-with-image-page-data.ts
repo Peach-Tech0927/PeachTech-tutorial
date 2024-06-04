@@ -38,5 +38,5 @@ export const step5TextWithImagePageData: TextWithImagePageProps = {
     },
   ],
   buttonText: "完了！",
-  nextButtonHref: "/",
+  nextButtonHref: "/final",
 };
