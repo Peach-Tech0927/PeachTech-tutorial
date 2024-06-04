@@ -10,6 +10,8 @@ const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
   title,
   detail,
   textWithImageArea,
+  buttonText,
+  nextButtonHref,
 }) => {
   return (
     <Box px={{ xs: 2, md: 35 }} py={{ xs: 1.5, md: 5 }} bgcolor={"#fff7f7"}>
@@ -29,7 +31,7 @@ const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
         ))}
         <Box display={"flex"} justifyContent={"space-between"}>
           <TopButton />
-          <CustomButton text={"次へ"} href={""} />
+          <CustomButton text={buttonText} href={nextButtonHref} />
         </Box>
       </Box>
     </Box>

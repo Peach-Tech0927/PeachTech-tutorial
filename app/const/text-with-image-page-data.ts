@@ -3,6 +3,8 @@ export type TextWithImagePageProps = {
   title: string;
   detail: string;
   textWithImageArea: TextWithImageAreaProps[];
+  buttonText: string;
+  nextButtonHref: string;
 };
 
 export type TextWithImageAreaProps = {
@@ -35,4 +37,6 @@ export const step5TextWithImagePageData: TextWithImagePageProps = {
       img: "/discord-screenshot.png",
     },
   ],
+  buttonText: "完了！",
+  nextButtonHref: "/",
 };

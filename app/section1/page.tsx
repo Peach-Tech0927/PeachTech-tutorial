@@ -10,6 +10,8 @@ const Page = () => {
       img={step1VideoPageData.img}
       contents={step1VideoPageData.contents}
       href={step1VideoPageData.href}
+      buttonText={step1VideoPageData.buttonText}
+      nextButtonHref={step1VideoPageData.nextButtonHref}
     />
   );
 };

@@ -5,6 +5,8 @@ export type VideoPageProps = {
   img: string;
   contents: string[];
   href: string;
+  buttonText: string;
+  nextButtonHref: string;
 };
 
 export const step1VideoPageData: VideoPageProps = {
@@ -20,6 +22,8 @@ export const step1VideoPageData: VideoPageProps = {
     "自己紹介",
   ],
   href: "/",
+  buttonText: "次へ",
+  nextButtonHref: "/section2",
 };
 
 export const step2VideoPageData: VideoPageProps = {
@@ -35,4 +39,6 @@ export const step2VideoPageData: VideoPageProps = {
     "自己紹介",
   ],
   href: "/",
+  buttonText: "次へ",
+  nextButtonHref: "/section3",
 };

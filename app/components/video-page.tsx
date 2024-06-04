@@ -12,6 +12,8 @@ const VideoPage: React.FC<VideoPageProps> = ({
   img,
   contents,
   href,
+  buttonText,
+  nextButtonHref,
 }) => {
   return (
     <Box px={{ xs: 2, md: 35 }} py={{ xs: 1.5, md: 5 }} bgcolor={"#fff7f7"}>
@@ -25,7 +27,7 @@ const VideoPage: React.FC<VideoPageProps> = ({
         <VideoArea img={img} contents={contents} href={href} />
         <Box display={"flex"} justifyContent={"space-between"}>
           <TopButton />
-          <CustomButton text={"次へ"} href={""} />
+          <CustomButton text={buttonText} href={nextButtonHref} />
         </Box>
       </Box>
     </Box>

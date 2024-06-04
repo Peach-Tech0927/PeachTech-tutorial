@@ -8,6 +8,8 @@ const Page = () => {
       title={step5TextWithImagePageData.title}
       detail={step5TextWithImagePageData.detail}
       textWithImageArea={step5TextWithImagePageData.textWithImageArea}
+      buttonText={step5TextWithImagePageData.buttonText}
+      nextButtonHref={step5TextWithImagePageData.nextButtonHref}
     />
   );
 };
