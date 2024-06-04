@@ -2,6 +2,8 @@ import { Box } from "@mui/material";
 import { TextWithImagePageProps } from "../const/text-with-image-page-data";
 import TextWithImageArea from "./text-with-image-area";
 import PageContents from "./page-contents";
+import CustomButton from "./custom-button";
+import TopButton from "./top-button";
 
 const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
   step,
@@ -25,6 +27,10 @@ const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
             img={data.img}
           />
         ))}
+        <Box display={"flex"} justifyContent={"space-between"}>
+          <TopButton />
+          <CustomButton text={"次へ"} href={""} />
+        </Box>
       </Box>
     </Box>
   );

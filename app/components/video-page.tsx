@@ -2,6 +2,8 @@ import { Box } from "@mui/material";
 import VideoArea from "./video-area";
 import { VideoPageProps } from "../const/video-page-data";
 import PageContents from "./page-contents";
+import TopButton from "./top-button";
+import CustomButton from "./custom-button";
 
 const VideoPage: React.FC<VideoPageProps> = ({
   step,
@@ -21,6 +23,10 @@ const VideoPage: React.FC<VideoPageProps> = ({
       >
         <PageContents step={step} title={title} detail={detail} />
         <VideoArea img={img} contents={contents} href={href} />
+        <Box display={"flex"} justifyContent={"space-between"}>
+          <TopButton />
+          <CustomButton text={"次へ"} href={""} />
+        </Box>
       </Box>
     </Box>
   );
