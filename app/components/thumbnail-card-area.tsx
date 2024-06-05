@@ -22,6 +22,7 @@ const ThumbnailCardArea = () => {
               title={data.title}
               imageSrc={data.imageSrc}
               number={data.number}
+              href={data.href}
             />
           </Grid>
         ))}
