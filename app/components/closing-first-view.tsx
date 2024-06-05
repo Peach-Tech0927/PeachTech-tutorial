@@ -3,7 +3,6 @@ import { Typography, Box } from "@mui/material";
 const ClosingFirstView = () => {
   return (
     <Box
-      position="relative"
       height={{ xs: "45vh", md: "75vh" }}
       sx={{
         backgroundImage: `url("/closing-first.png")`,
