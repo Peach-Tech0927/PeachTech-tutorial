@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
-import { TextWithImagePageProps } from "../const/text-with-image-page-data";
 import TextWithImageArea from "./text-with-image-area";
 import PageContents from "./page-contents";
 import CustomButton from "./custom-button";
 import TopButton from "./top-button";
+import { TextWithImagePageProps } from "../types/types";
 
 const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
   step,

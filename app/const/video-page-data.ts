@@ -1,13 +1,4 @@
-export type VideoPageProps = {
-  step: number;
-  title: string;
-  detail: string;
-  img: string;
-  contents: string[];
-  href: string;
-  buttonText: string;
-  nextButtonHref: string;
-};
+import { VideoPageProps } from "../types/types";
 
 export const step1VideoPageData: VideoPageProps = {
   step: 1,

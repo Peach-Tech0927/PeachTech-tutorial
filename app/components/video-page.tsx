@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
 import VideoArea from "./video-area";
-import { VideoPageProps } from "../const/video-page-data";
 import PageContents from "./page-contents";
 import TopButton from "./top-button";
 import CustomButton from "./custom-button";
+import { VideoPageProps } from "../types/types";
 
 const VideoPage: React.FC<VideoPageProps> = ({
   step,
