@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
-import { TextWithImageAreaProps } from "../const/text-with-image-page-data";
+import { TextWithImageAreaProps } from "../types/types";
 
 const TextWithImageArea: React.FC<TextWithImageAreaProps> = ({
   title,
