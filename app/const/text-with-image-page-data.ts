@@ -1,17 +1,4 @@
-export type TextWithImagePageProps = {
-  step: number;
-  title: string;
-  detail: string;
-  textWithImageArea: TextWithImageAreaProps[];
-  buttonText: string;
-  nextButtonHref: string;
-};
-
-export type TextWithImageAreaProps = {
-  title: string;
-  detail: string;
-  img: string;
-};
+import { TextWithImagePageProps } from "../types/types";
 
 export const step5TextWithImagePageData: TextWithImagePageProps = {
   step: 5,

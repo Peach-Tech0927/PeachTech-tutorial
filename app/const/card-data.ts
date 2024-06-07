@@ -1,9 +1,4 @@
-export type cardDataProps = {
-  title: string;
-  imageSrc: string;
-  number: string;
-  href: string;
-};
+import { cardDataProps } from "../types/types";
 
 export const cardData: cardDataProps[] = [
   {
