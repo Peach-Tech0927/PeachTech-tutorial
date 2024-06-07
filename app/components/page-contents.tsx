@@ -29,7 +29,7 @@ const PageContents: React.FC<TProps> = ({ step, title, detail }) => {
       >
         {detail}
         <br />
-        見終わったら右下の次へボタンを押して次に進んでください！
+        見終わったら右下のボタンを押して次に進んでください！
       </Typography>
     </Box>
   );
