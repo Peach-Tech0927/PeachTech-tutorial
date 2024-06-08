@@ -6,7 +6,7 @@ import CustomButton from "./custom-button";
 const ClosingScondView = () => {
   return (
     <>
-      <Box bgcolor="#fff7f7">
+      <Box bgcolor="#fff7f7" py={11}>
         <Box textAlign="center" alignContent="center" bgcolor="#fff7f7">
           <Image
             src="/peachtech.png"
@@ -25,7 +25,7 @@ const ClosingScondView = () => {
           bgcolor="white"
           mx={{ xs: 3, md: 50 }}
           py={4}
-          my={3}
+          my={10}
         >
           <Typography lineHeight={3}>
             ・早くプログラミングを始めたい方
