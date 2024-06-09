@@ -63,7 +63,7 @@ export const step4VideoPageData: VideoPageProps = {
     "もくもく部屋の紹介",
     "自己紹介",
   ],
-  href: "https://drive.google.com/drive/u/0/folders/1yBmD6mim4WFBdCKv1lveoMQGAgO40a33",
+  href: "https://drive.google.com/file/d/1Z99lrCGUbnRbPz1R1Wd_s2xoK1_nOKxL/view",
   buttonText: "次へ",
   nextButtonHref: "/section5",
 };
