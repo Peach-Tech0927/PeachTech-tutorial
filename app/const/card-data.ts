@@ -31,4 +31,10 @@ export const cardData: cardDataProps[] = [
     number: "/number5.png",
     href: "/section5",
   },
+  {
+    title: "メンションと返信について",
+    imageSrc: "/sample.png",
+    number: "/number6.png",
+    href: "/section6",
+  },
 ];
