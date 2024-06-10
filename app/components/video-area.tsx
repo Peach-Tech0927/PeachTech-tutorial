@@ -52,7 +52,7 @@ const VideoArea: React.FC<VideoAreaProps> = ({ img, href, contents }) => {
         bgcolor={"#f2f1f1"}
         mb={{ xs: 10, md: 20 }}
         mt={{ xs: 4, md: 7 }}
-        px={{ xs: 4, md: 8 }}
+        px={{ xs: 4, md: 5 }}
         py={{ xs: 1.5, md: 2 }}
       >
         <Typography
