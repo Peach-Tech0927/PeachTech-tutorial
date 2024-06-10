@@ -49,7 +49,7 @@ export const step4VideoPageData: VideoPageProps = {
   contents: [
     "質問はメンション",
     "通知をオンにしてね",
-    "DiscordをスマホにもPCにも入れる",
+    "DiscordをスマホとPCに入れる",
   ],
   href: "/",
   buttonText: "次へ",
