@@ -44,6 +44,7 @@ const VideoArea: React.FC<VideoAreaProps> = ({ img, href, contents }) => {
             zIndex: 1,
           }}
           href={href}
+          target="_blank"
         >
           動画を見る
         </Button>
