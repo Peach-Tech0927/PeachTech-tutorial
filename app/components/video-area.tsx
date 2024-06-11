@@ -26,15 +26,16 @@ const VideoArea: React.FC<VideoAreaProps> = ({ img, href, contents }) => {
           style={{
             maxWidth: "100%",
             height: "auto",
+            opacity: "0.7",
           }}
         />
         <Button
           variant="contained"
           sx={{
             color: "white",
-            bgcolor: "#5071E5",
+            bgcolor: "#01B1BC",
             "&:hover": {
-              background: "#3758CD",
+              background: "#0BA6B0",
             },
             px: { xs: 3, md: 4 },
             py: 1,
