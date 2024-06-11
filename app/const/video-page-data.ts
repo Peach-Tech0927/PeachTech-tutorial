@@ -5,7 +5,7 @@ export const step1VideoPageData: VideoPageProps = {
   title: "Discordの使い方の動画を見よう！",
   detail:
     "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
-  img: "/discord-screenshot.png",
+  img: "/video-thumbnail-1.jpeg",
   contents: ["timesの使い方について", "ロールの設定方法", "もくもく部屋の紹介"],
   href: "https://drive.google.com/file/d/1kSbj_EJGxP-V31UVByCm_yC0LDtyIfsR/view",
   buttonText: "次へ",
@@ -17,7 +17,7 @@ export const step2VideoPageData: VideoPageProps = {
   title: "Discordの使い方の動画を見よう！",
   detail:
     "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
-  img: "/discord-screenshot.png",
+  img: "/video-thumbnail-2.jpeg",
   contents: [
     "メンバーズサイトについて",
     "サイトへのアクセス方法",
@@ -33,7 +33,7 @@ export const step3VideoPageData: VideoPageProps = {
   title: "Discordの使い方の動画を見よう！",
   detail:
     "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
-  img: "/discord-screenshot.png",
+  img: "/video-thumbnail-3.jpeg",
   contents: ["TechTrainの紹介", "機能の説明"],
   href: "https://drive.google.com/file/d/1qOxpUXzHMAb1dzZvzdf2ON7ZEYqkfUGG/view",
   buttonText: "次へ",
@@ -45,7 +45,7 @@ export const step4VideoPageData: VideoPageProps = {
   title: "Discordの使い方の動画を見よう！",
   detail:
     "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
-  img: "/discord-screenshot.png",
+  img: "/video-thumbnail-4.jpeg",
   contents: [
     "質問はメンション",
     "通知をオンにしてね",
