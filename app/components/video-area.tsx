@@ -26,13 +26,14 @@ const VideoArea: React.FC<VideoAreaProps> = ({ img, href, contents }) => {
           style={{
             maxWidth: "100%",
             height: "auto",
+            opacity: "0.7",
           }}
         />
         <Button
           variant="contained"
           sx={{
             color: "white",
-            bgcolor: "#5071E5",
+            bgcolor: "#4468E7",
             "&:hover": {
               background: "#3758CD",
             },
@@ -44,6 +45,7 @@ const VideoArea: React.FC<VideoAreaProps> = ({ img, href, contents }) => {
             zIndex: 1,
           }}
           href={href}
+          target="_blank"
         >
           動画を見る
         </Button>
@@ -52,7 +54,7 @@ const VideoArea: React.FC<VideoAreaProps> = ({ img, href, contents }) => {
         bgcolor={"#f2f1f1"}
         mb={{ xs: 10, md: 20 }}
         mt={{ xs: 4, md: 7 }}
-        px={{ xs: 4, md: 8 }}
+        px={{ xs: 2, md: 5 }}
         py={{ xs: 1.5, md: 2 }}
       >
         <Typography
