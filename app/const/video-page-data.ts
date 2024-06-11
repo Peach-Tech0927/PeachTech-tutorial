@@ -7,7 +7,7 @@ export const step1VideoPageData: VideoPageProps = {
     "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
   img: "/discord-screenshot.png",
   contents: ["timesの使い方について", "ロールの設定方法", "もくもく部屋の紹介"],
-  href: "/",
+  href: "https://drive.google.com/file/d/1kSbj_EJGxP-V31UVByCm_yC0LDtyIfsR/view",
   buttonText: "次へ",
   nextButtonHref: "/section2",
 };
@@ -23,7 +23,7 @@ export const step2VideoPageData: VideoPageProps = {
     "サイトへのアクセス方法",
     "サイトに載せるデータの入力",
   ],
-  href: "/",
+  href: "https://drive.google.com/file/d/1TIHnfOD_sWoxaCMMEPHeat1q4yZUyAdt/view",
   buttonText: "次へ",
   nextButtonHref: "/section3",
 };
@@ -35,7 +35,7 @@ export const step3VideoPageData: VideoPageProps = {
     "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
   img: "/discord-screenshot.png",
   contents: ["TechTrainの紹介", "機能の説明"],
-  href: "/",
+  href: "https://drive.google.com/file/d/1qOxpUXzHMAb1dzZvzdf2ON7ZEYqkfUGG/view",
   buttonText: "次へ",
   nextButtonHref: "/section4",
 };
@@ -51,7 +51,7 @@ export const step4VideoPageData: VideoPageProps = {
     "通知をオンにしてね",
     "DiscordをスマホとPCに入れる",
   ],
-  href: "/",
+  href: "https://drive.google.com/file/d/1Z99lrCGUbnRbPz1R1Wd_s2xoK1_nOKxL/view",
   buttonText: "次へ",
   nextButtonHref: "/section5",
 };
