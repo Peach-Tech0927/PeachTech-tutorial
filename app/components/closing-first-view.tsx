@@ -5,7 +5,7 @@ const ClosingFirstView = () => {
     <Box
       height={{ xs: "45vh", md: "75vh" }}
       sx={{
-        backgroundImage: `url("/closing-first.png")`,
+        backgroundImage: `url("/peachtech-welcome.jpg")`,
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
@@ -13,7 +13,7 @@ const ClosingFirstView = () => {
       <Box
         height={"100%"}
         sx={{
-          backdropFilter: "blur(3px)",
+          backdropFilter: "blur(8px)",
           backgroundColor: "rgba(255,255,255,0.5)",
         }}
       >
