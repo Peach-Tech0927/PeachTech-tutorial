@@ -1,25 +1,26 @@
-import { Card, CardActionArea, Typography, Box } from "@mui/material";
+import { Card, CardActionArea, Box } from "@mui/material";
 import Image from "next/image";
 import { cardDataProps } from "../types/types";
+import CardBottom from "./card-bottom";
 
 const ThumbnailCard: React.FC<cardDataProps> = ({
   title,
-  imageSrc,
   number,
+  imageSrc,
   href,
 }) => {
   return (
-    <Card sx={{ maxWidth: "auto", borderRadius: "20px" }}>
-      <CardActionArea sx={{ px: 1 }} href={href}>
-        <Box display={"flex"} py={2}>
-          <Image src={number} width={45} height={45} alt="サンプル画像" />
-          <Typography fontSize={{ xs: 23, md: 20 }} marginTop={1.5}>
-            {title}
-          </Typography>
+    <Card sx={{ minWidth: 300, borderRadius: "15px", position: "relative" }}>
+      <CardActionArea href={href}>
+        <Box
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"center"}
+          py={5}
+        >
+          <Image src={imageSrc} width={80} height={80} alt={"サンプル画像"} />
         </Box>
-        <Box pb={2} px={2}>
-          <Image src={imageSrc} width={250} height={160} alt="サンプル画像" />
-        </Box>
+        <CardBottom title={title} number={number} />
       </CardActionArea>
     </Card>
   );
