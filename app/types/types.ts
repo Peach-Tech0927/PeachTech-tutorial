@@ -31,7 +31,7 @@ export type VideoPageProps = {
   nextButtonHref: string;
 };
 
-export type CardBottomProps = {
+export type ThumbnailCardBottomProps = {
   title: string;
   number: string;
 };

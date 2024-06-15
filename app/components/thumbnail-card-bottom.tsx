@@ -1,8 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import { CardBottomProps } from "../types/types";
+import { ThumbnailCardBottomProps } from "../types/types";
 
-const CardBottom: React.FC<CardBottomProps> = ({ title, number }) => {
+const ThumbnailCardBottom: React.FC<ThumbnailCardBottomProps> = ({
+  title,
+  number,
+}) => {
   return (
     <Box display={"flex"} bgcolor={"#FF9DA7"} py={1.5}>
       <Typography color={"white"} ml={2.8}>
@@ -15,10 +18,10 @@ const CardBottom: React.FC<CardBottomProps> = ({ title, number }) => {
         {title}
       </Typography>
       <KeyboardArrowRightIcon
-        style={{ color: "white", position: "absolute", right: 4 }}
+        sx={{ color: "white", position: "absolute", right: 4 }}
       />
     </Box>
   );
 };
 
-export default CardBottom;
+export default ThumbnailCardBottom;

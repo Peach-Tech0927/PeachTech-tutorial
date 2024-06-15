@@ -1,7 +1,7 @@
 import { Card, CardActionArea, Box } from "@mui/material";
 import Image from "next/image";
 import { cardDataProps } from "../types/types";
-import CardBottom from "./card-bottom";
+import ThumbnailCardBottom from "./thumbnail-card-bottom";
 
 const ThumbnailCard: React.FC<cardDataProps> = ({
   title,
@@ -20,7 +20,7 @@ const ThumbnailCard: React.FC<cardDataProps> = ({
         >
           <Image src={imageSrc} width={80} height={80} alt={"サンプル画像"} />
         </Box>
-        <CardBottom title={title} number={number} />
+        <ThumbnailCardBottom title={title} number={number} />
       </CardActionArea>
     </Card>
   );
