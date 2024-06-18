@@ -34,10 +34,10 @@ const TextWithImageArea: React.FC<TextWithImageAreaProps> = ({
             position={"absolute"}
             top={"50%"}
             left={"50%"}
-            width={{ xs: 600, md: 1000 }}
+            width={{ xs: 600, md: 1200 }} //下のCustomTextWithImageのwidthと同じ大きさに指定する
             sx={{ transform: "translate(-50%, -50%)", outline: "none" }}
           >
-            <CustomTextWithImage width={1000} src={img} />
+            <CustomTextWithImage width={1200} src={img} />
           </Box>
         </Modal>
       </Box>
