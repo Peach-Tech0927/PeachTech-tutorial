@@ -30,14 +30,14 @@ const TextWithImageArea: React.FC<TextWithImageAreaProps> = ({
       <Typography fontSize={{ xs: 13, md: 16 }} mt={1}>
         {detail}
       </Typography>
-      <Box mx={{ xs: 0, md: 1 }} mt={{ xs: 1, md: 3 }}>
+      <Box mx={{ md: 1 }} mt={{ xs: 1, md: 3 }}>
         {isPC ? (
           <Button onClick={handleOpen}>
             <Image
               width={580}
               height={350}
               src={img}
-              alt={"description-img"}
+              alt={"computer-screen-description-img"}
               style={{
                 maxWidth: "100%",
                 height: "auto",
@@ -49,7 +49,7 @@ const TextWithImageArea: React.FC<TextWithImageAreaProps> = ({
             width={580}
             height={350}
             src={img}
-            alt={"description-img"}
+            alt={"smartphone-screen-description-img"}
             style={{
               maxWidth: "100%",
               height: "auto",
@@ -62,7 +62,7 @@ const TextWithImageArea: React.FC<TextWithImageAreaProps> = ({
               width={1000}
               height={350}
               src={img}
-              alt={"description-img"}
+              alt={"expansion-description-img"}
               style={{
                 maxWidth: "100%",
                 height: "auto",
