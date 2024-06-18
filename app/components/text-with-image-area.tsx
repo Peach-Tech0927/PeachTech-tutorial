@@ -1,26 +1,19 @@
 "use client";
-import * as React from "react";
-import { Box, Button, Modal, Typography, useMediaQuery } from "@mui/material";
-import Image from "next/image";
+import { useState } from "react";
+import { Box, Modal, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { TextWithImageAreaProps } from "../types/types";
-
-const modalStyle = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: { xs: 600, md: 1000 },
-};
+import CustomTextWithImage from "./custom-text-with-image";
 
 const TextWithImageArea: React.FC<TextWithImageAreaProps> = ({
   title,
   detail,
   img,
 }) => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const isPC = useMediaQuery("(min-width:600px)");
+  const theme = useTheme();
+  const isPCScreen = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
     <Box px={1} mt={7} mb={{ xs: 10, md: 14 }}>
@@ -31,43 +24,20 @@ const TextWithImageArea: React.FC<TextWithImageAreaProps> = ({
         {detail}
       </Typography>
       <Box mx={{ md: 1 }} mt={{ xs: 1, md: 3 }}>
-        {isPC ? (
-          <Button onClick={handleOpen}>
-            <Image
-              width={580}
-              height={350}
-              src={img}
-              alt={"computer-screen-description-img"}
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-              }}
-            />
-          </Button>
+        {isPCScreen ? (
+          <CustomTextWithImage src={img} onOpen={handleOpen} />
         ) : (
-          <Image
-            width={580}
-            height={350}
-            src={img}
-            alt={"smartphone-screen-description-img"}
-            style={{
-              maxWidth: "100%",
-              height: "auto",
-            }}
-          />
+          <CustomTextWithImage src={img} />
         )}
-        <Modal open={open} onClose={handleClose} sx={{ outline: "none" }}>
-          <Box sx={{ ...modalStyle }}>
-            <Image
-              width={1000}
-              height={350}
-              src={img}
-              alt={"expansion-description-img"}
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-              }}
-            />
+        <Modal open={open} onClose={handleClose}>
+          <Box
+            position={"absolute"}
+            top={"50%"}
+            left={"50%"}
+            width={{ xs: 600, md: 1000 }}
+            sx={{ transform: "translate(-50%, -50%)", outline: "none" }}
+          >
+            <CustomTextWithImage width={1000} src={img} />
           </Box>
         </Modal>
       </Box>
