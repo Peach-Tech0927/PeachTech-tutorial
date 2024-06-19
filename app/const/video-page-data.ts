@@ -4,7 +4,7 @@ export const step1VideoPageData: VideoPageProps = {
   step: 1,
   title: "Discordの使い方の動画を見よう！",
   detail:
-    "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
+    "この動画ではDiscordの使い方を説明しています！PeachTechのDiscordにはたくさんのチャンネルがあるので、その紹介をしています！",
   img: "/video-thumbnail-1.jpeg",
   contents: ["timesの使い方について", "ロールの設定方法", "もくもく部屋の紹介"],
   href: "https://drive.google.com/file/d/1kSbj_EJGxP-V31UVByCm_yC0LDtyIfsR/view",
@@ -14,9 +14,9 @@ export const step1VideoPageData: VideoPageProps = {
 
 export const step2VideoPageData: VideoPageProps = {
   step: 2,
-  title: "Discordの使い方の動画を見よう！",
+  title: "メンバーズサイトについての動画を見よう！",
   detail:
-    "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
+    "この動画ではPeachTechにどんな人がいるか分かる「メンバーズサイト」の紹介をしています！アクセス方法やデータの入力方法を説明しているので、実際にアクセスしたりデータを送ってみてください！",
   img: "/video-thumbnail-2.jpeg",
   contents: [
     "メンバーズサイトについて",
@@ -30,9 +30,9 @@ export const step2VideoPageData: VideoPageProps = {
 
 export const step3VideoPageData: VideoPageProps = {
   step: 3,
-  title: "Discordの使い方の動画を見よう！",
+  title: "TechTrainの紹介の動画を見よう！",
   detail:
-    "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
+    "この動画ではPeachTechがアンバサダー提携をしている「TechTrain」というプログラミング学習サービスの紹介をしています！登録するかどうかを考えながら見てみてください！",
   img: "/video-thumbnail-3.jpeg",
   contents: ["TechTrainの紹介", "機能の説明"],
   href: "https://drive.google.com/file/d/1qOxpUXzHMAb1dzZvzdf2ON7ZEYqkfUGG/view",
@@ -42,13 +42,13 @@ export const step3VideoPageData: VideoPageProps = {
 
 export const step4VideoPageData: VideoPageProps = {
   step: 4,
-  title: "Discordの使い方の動画を見よう！",
+  title: "Discordの色々な設定の動画を見よう！",
   detail:
-    "Discordの使い方の説明です！！PeachTechにはたくさんのチャンネルがあります！その紹介などもしているのでDiscordを使ったことある人も全部見てください！！",
+    "この動画ではDiscordで円滑にコミュニケーションを取るための設定などをしてもらいます！どれも簡単にできることなので動画を見ている間にやってみてください！",
   img: "/video-thumbnail-4.jpeg",
   contents: [
     "質問はメンション",
-    "通知をオンにしてね",
+    "timesの通知をオンにしてね",
     "DiscordをスマホとPCに入れる",
   ],
   href: "https://drive.google.com/file/d/1Z99lrCGUbnRbPz1R1Wd_s2xoK1_nOKxL/view",
