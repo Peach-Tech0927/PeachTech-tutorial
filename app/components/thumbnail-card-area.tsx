@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 
 const ThumbnailCardArea = () => {
   return (
-    <Box px={{ xs: 2, md: 15 }} bgcolor={"#fff7f7"} mt={4}>
+    <Box px={{ xs: 2, md: 15 }} bgcolor={"#fff7f7"} py={15}>
       <Grid container spacing={4} padding={3}>
         {cardData.map((data) => (
           <Grid

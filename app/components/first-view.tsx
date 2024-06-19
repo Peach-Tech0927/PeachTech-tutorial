@@ -61,7 +61,7 @@ const FirstView = () => {
             <StyledImage
               width={560}
               height={370}
-              src={"/img/seikei-library.jpeg"}
+              src={"/seikei-library.jpeg"}
               alt={"image-first-view"}
             />
           </Box>
