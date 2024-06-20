@@ -1,13 +1,7 @@
-import FirstView from "./components/Organisms/first-view";
-import ThumbnailCardArea from "./components/Molecules/thumbnail-card-area";
+import HomePage from "./components/Templetes/home-page";
 
 const Home = () => {
-  return (
-    <>
-      <FirstView />
-      <ThumbnailCardArea />
-    </>
-  );
+  return <HomePage />;
 };
 
 export default Home;

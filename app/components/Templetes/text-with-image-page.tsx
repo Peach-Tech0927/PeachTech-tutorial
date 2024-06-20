@@ -1,17 +1,15 @@
 import { Box } from "@mui/material";
-import VideoArea from "../Molecules/video-area";
-import PageContents from "../Molecules/page-contents";
-import TopButton from "../Atoms/top-button";
+import TextWithImageArea from "../Organisms/text-with-image-area";
+import PageContentArea from "../Organisms/page-content-area";
 import CustomButton from "../Atoms/custom-button";
-import { VideoPageProps } from "../../types/types";
+import TopButton from "../Atoms/top-button";
+import { TextWithImagePageProps } from "../../types/types";
 
-const VideoPage: React.FC<VideoPageProps> = ({
+const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
   step,
   title,
   detail,
-  img,
-  contents,
-  href,
+  textWithImageArea,
   buttonText,
   nextButtonHref,
 }) => {
@@ -23,8 +21,14 @@ const VideoPage: React.FC<VideoPageProps> = ({
         borderRadius={1}
         p={{ xs: 3, md: 6 }}
       >
-        <PageContents step={step} title={title} detail={detail} />
-        <VideoArea img={img} contents={contents} href={href} />
+        <PageContentArea step={step} title={title} detail={detail} />
+        {textWithImageArea.map((data) => (
+          <TextWithImageArea
+            title={data.title}
+            detail={data.detail}
+            img={data.img}
+          />
+        ))}
         <Box
           display={"flex"}
           alignItems={"center"}
@@ -38,4 +42,4 @@ const VideoPage: React.FC<VideoPageProps> = ({
   );
 };
 
-export default VideoPage;
+export default TextWithImagePage;
