@@ -1,4 +1,4 @@
-import TextWithImagePage from "../components/text-with-image-page";
+import TextWithImagePage from "../components/Templetes/text-with-image-page";
 import { step6TextWithImagePageData } from "../const/text-with-image-page-data";
 
 const Page = () => {

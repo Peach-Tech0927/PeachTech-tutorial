@@ -2,7 +2,7 @@
 import { Box, Button, Typography, styled } from "@mui/material";
 import Image from "next/image";
 
-const FirstView = () => {
+const FirstViewArea = () => {
   return (
     <Box
       position={"relative"}
@@ -81,4 +81,4 @@ const StyledImage = styled(Image)(({ theme }) => ({
   },
 }));
 
-export default FirstView;
+export default FirstViewArea;

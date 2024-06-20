@@ -1,13 +1,7 @@
-import FirstView from "./components/first-view";
-import ThumbnailCardArea from "./components/thumbnail-card-area";
+import HomePage from "./components/Templetes/home-page";
 
 const Home = () => {
-  return (
-    <>
-      <FirstView />
-      <ThumbnailCardArea />
-    </>
-  );
+  return <HomePage />;
 };
 
 export default Home;

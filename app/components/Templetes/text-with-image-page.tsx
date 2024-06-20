@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
-import TextWithImageArea from "./text-with-image-area";
-import PageContents from "./page-contents";
-import CustomButton from "./custom-button";
-import TopButton from "./top-button";
-import { TextWithImagePageProps } from "../types/types";
+import TextWithImageArea from "../Organisms/text-with-image-area";
+import PageContentArea from "../Organisms/page-content-area";
+import CustomButton from "../Atoms/custom-button";
+import TopButton from "../Atoms/top-button";
+import { TextWithImagePageProps } from "../../types/types";
 
 const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
   step,
@@ -21,7 +21,7 @@ const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
         borderRadius={1}
         p={{ xs: 3, md: 6 }}
       >
-        <PageContents step={step} title={title} detail={detail} />
+        <PageContentArea step={step} title={title} detail={detail} />
         {textWithImageArea.map((data) => (
           <TextWithImageArea
             title={data.title}

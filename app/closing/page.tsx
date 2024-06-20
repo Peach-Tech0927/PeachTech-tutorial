@@ -1,13 +1,7 @@
-import ClosingFirstView from "../components/closing-first-view";
-import ClosingScondView from "../components/closing-second-view";
+import ClosingPage from "../components/Templetes/closing-page";
 
 const pages = () => {
-  return (
-    <>
-      <ClosingFirstView />
-      <ClosingScondView />
-    </>
-  );
+  return <ClosingPage />;
 };
 
 export default pages;

@@ -6,7 +6,7 @@ type TProps = {
   detail: string;
 };
 
-const PageContents: React.FC<TProps> = ({ step, title, detail }) => {
+const PageContentArea: React.FC<TProps> = ({ step, title, detail }) => {
   return (
     <Box>
       <Box borderBottom={1} borderColor={"#c9c9c9"} display={"flex"} p={0.5}>
@@ -35,4 +35,4 @@ const PageContents: React.FC<TProps> = ({ step, title, detail }) => {
   );
 };
 
-export default PageContents;
+export default PageContentArea;
