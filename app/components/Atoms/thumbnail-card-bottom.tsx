@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import { ThumbnailCardBottomProps } from "../types/types";
+import { ThumbnailCardBottomProps } from "../../types/types";
 
 const ThumbnailCardBottom: React.FC<ThumbnailCardBottomProps> = ({
   title,

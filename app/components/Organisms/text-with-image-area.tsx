@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import { Box, Modal, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { TextWithImageAreaProps } from "../types/types";
-import CustomTextWithImage from "./custom-text-with-image";
+import { TextWithImageAreaProps } from "../../types/types";
+import CustomTextWithImage from "../Molecules/custom-text-with-image";
 
 const TextWithImageArea: React.FC<TextWithImageAreaProps> = ({
   title,

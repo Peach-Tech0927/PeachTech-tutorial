@@ -1,5 +1,5 @@
-import ClosingFirstView from "../components/closing-first-view";
-import ClosingScondView from "../components/closing-second-view";
+import ClosingFirstView from "../components/Templates/closing-first-view";
+import ClosingScondView from "../components/Templates/closing-second-view";
 
 const pages = () => {
   return (

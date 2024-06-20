@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
-import { cardData } from "../const/card-data";
-import ThumbnailCard from "./thumbnail-card";
+import { cardData } from "../../const/card-data";
+import ThumbnailCard from "../Molecules/thumbnail-card";
 import { Box } from "@mui/material";
 
 const ThumbnailCardArea = () => {

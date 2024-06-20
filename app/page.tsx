@@ -1,5 +1,5 @@
-import FirstView from "./components/first-view";
-import ThumbnailCardArea from "./components/thumbnail-card-area";
+import FirstView from "./components/Templates/first-view";
+import ThumbnailCardArea from "./components/Organisms/thumbnail-card-area";
 
 const Home = () => {
   return (
