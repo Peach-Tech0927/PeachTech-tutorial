@@ -1,4 +1,4 @@
-import VideoPage from "../components/Templates/video-page";
+import VideoPage from "../components/Organisms/video-page";
 import { step3VideoPageData } from "../const/video-page-data";
 
 const Page = () => {

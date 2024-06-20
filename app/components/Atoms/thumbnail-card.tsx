@@ -1,7 +1,7 @@
 import { Card, CardActionArea, Box } from "@mui/material";
 import Image from "next/image";
 import { cardDataProps } from "../../types/types";
-import ThumbnailCardBottom from "../Atoms/thumbnail-card-bottom";
+import ThumbnailCardBottom from "./thumbnail-card-bottom";
 
 const ThumbnailCard: React.FC<cardDataProps> = ({
   title,

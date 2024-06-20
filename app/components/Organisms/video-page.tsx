@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
-import VideoArea from "../Organisms/video-area";
-import PageContents from "./page-contents";
+import VideoArea from "../Molecules/video-area";
+import PageContents from "../Molecules/page-contents";
 import TopButton from "../Atoms/top-button";
 import CustomButton from "../Atoms/custom-button";
 import { VideoPageProps } from "../../types/types";

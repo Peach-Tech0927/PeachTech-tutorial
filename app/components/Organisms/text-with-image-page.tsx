@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
-import TextWithImageArea from "../Organisms/text-with-image-area";
-import PageContents from "./page-contents";
+import TextWithImageArea from "../Molecules/text-with-image-area";
+import PageContents from "../Molecules/page-contents";
 import CustomButton from "../Atoms/custom-button";
 import TopButton from "../Atoms/top-button";
 import { TextWithImagePageProps } from "../../types/types";
