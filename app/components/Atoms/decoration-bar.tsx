@@ -1,10 +1,10 @@
 import { Box } from "@mui/material";
 
-export type decorantionBerProps = {
+export type decorantionBarProps = {
   transform: string;
 };
 
-const DecorationBar: React.FC<decorantionBerProps> = ({ transform }) => {
+const DecorationBar: React.FC<decorantionBarProps> = ({ transform }) => {
   return (
     <Box
       mx={1}
