@@ -14,6 +14,7 @@ const Header = () => {
           />
         </Link>
         <Typography
+          m={{ sm: "0 auto" }}
           color={"black"}
           fontSize={{ xs: 15, md: 20 }}
           fontWeight={"bold"}
