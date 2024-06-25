@@ -14,7 +14,7 @@ const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
   nextButtonHref,
 }) => {
   return (
-    <Box px={{ xs: 2, md: 35 }} py={{ xs: 1.5, md: 5 }} bgcolor={"#fff7f7"}>
+    <Box px={{ xs: 2, md: 35 }} py={{ xs: 1.5, md: 5 }} bgcolor={"#FFEFEF"}>
       <Box
         bgcolor={"white"}
         boxShadow={"0.5px 1px 5px -2px gray"}
