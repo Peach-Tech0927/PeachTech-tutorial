@@ -42,10 +42,10 @@ const FirstViewArea = () => {
                 px: { xs: 1, md: 3 },
                 my: { xs: 1, md: 3 },
                 color: "white",
-                bgcolor: "#4AC3CB",
+                bgcolor: "#5079E1",
                 fontSize: { xs: 15, md: 21 },
                 "&:hover": {
-                  background: "#01B1BC",
+                  background: "#3758CD",
                 },
               }}
             >
