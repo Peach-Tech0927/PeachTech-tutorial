@@ -1,4 +1,5 @@
 "use client";
+import { Padding } from "@mui/icons-material";
 import { Box, Button, Typography, styled } from "@mui/material";
 import Image from "next/image";
 
@@ -33,7 +34,14 @@ const FirstViewArea = () => {
             flexDirection={"column"} //TypographyとButtonを縦並びにする
             mt={{ xs: 6, md: 0 }}
           >
-            <Typography fontSize={{ xs: 22, md: 30 }} my={{ xs: 2, md: 3 }}>
+            <Typography
+              fontSize={{ xs: 22, md: 30 }}
+              fontWeight={550}
+              fontFamily={"revert"}
+              letterSpacing={0.2}
+              color={"#131313"}
+              my={{ xs: 2, md: 3 }}
+            >
               PeachTechへようこそ！
             </Typography>
             <Button
@@ -42,10 +50,10 @@ const FirstViewArea = () => {
                 px: { xs: 1, md: 3 },
                 my: { xs: 1, md: 3 },
                 color: "white",
-                bgcolor: "#5079E1",
+                bgcolor: "#6376E3",
                 fontSize: { xs: 15, md: 21 },
                 "&:hover": {
-                  background: "#3758CD",
+                  background: "#5468DB",
                 },
               }}
             >
