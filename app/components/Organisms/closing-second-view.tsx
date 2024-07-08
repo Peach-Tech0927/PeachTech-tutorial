@@ -1,6 +1,7 @@
 import { Typography, Box } from "@mui/material";
 import DecorationBar from "../Atoms/decoration-bar";
 import WebTutorialButton from "../Atoms/web-tutorial-button";
+import Image from "next/image";
 
 const ClosingSecondView = () => {
   return (
