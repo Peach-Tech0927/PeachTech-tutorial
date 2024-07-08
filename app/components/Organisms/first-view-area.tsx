@@ -1,5 +1,4 @@
 "use client";
-import { Padding } from "@mui/icons-material";
 import { Box, Button, Typography, styled } from "@mui/material";
 import Image from "next/image";
 
