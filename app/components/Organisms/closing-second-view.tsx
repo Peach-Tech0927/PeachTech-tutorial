@@ -3,7 +3,7 @@ import Image from "next/image";
 import DecorationBar from "../Atoms/decoration-bar";
 import CustomButton from "../Atoms/custom-button";
 
-const ClosingScondView = () => {
+const ClosingSecondView = () => {
   return (
     <Box bgcolor="#fff7f7" pb={10}>
       <Box textAlign="center" alignContent="center" bgcolor="#fff7f7" pt={5}>
@@ -49,4 +49,4 @@ const ClosingScondView = () => {
   );
 };
 
-export default ClosingScondView;
+export default ClosingSecondView;

@@ -1,4 +1,4 @@
-export type cardDataProps = {
+export type CardDataProps = {
   title: string;
   imageSrc: string;
   number: string;
@@ -29,9 +29,4 @@ export type VideoPageProps = {
   href: string;
   buttonText: string;
   nextButtonHref: string;
-};
-
-export type ThumbnailCardBottomProps = {
-  title: string;
-  number: string;
 };
