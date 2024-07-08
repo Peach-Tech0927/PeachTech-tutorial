@@ -5,8 +5,8 @@ import CustomButton from "../Atoms/custom-button";
 
 const ClosingSecondView = () => {
   return (
-    <Box bgcolor="#fff7f7" pb={10}>
-      <Box textAlign="center" alignContent="center" bgcolor="#fff7f7" pt={5}>
+    <Box bgcolor="#FFEFEF" pb={10}>
+      <Box textAlign="center" alignContent="center" bgcolor="#FFEFEF" pt={5}>
         <Image
           src="/peachtech.png"
           width={150}
