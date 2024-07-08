@@ -1,4 +1,5 @@
 import { Typography, Box } from "@mui/material";
+import Image from "next/image";
 
 const ClosingFirstView = () => {
   return (
@@ -13,24 +14,42 @@ const ClosingFirstView = () => {
       <Box
         height={"100%"}
         sx={{
-          backdropFilter: "blur(8px)",
-          backgroundColor: "rgba(255,255,255,0.5)",
+          backdropFilter: "blur(5px)",
+          backgroundColor: "rgba(255,255,255,0.6)",
         }}
       >
         <Box
           display="flex"
           alignItems="center"
           justifyContent="center"
-          pt={{ xs: 10, md: 20 }}
+          pt={{ xs: 2, md: 15 }}
           flexDirection="column"
         >
-          <Typography fontSize={{ xs: 15, md: 25 }} mb={2}>
-            動画視聴お疲れ様でした！！
+          <Image
+            src="/peachtech.png"
+            width={150}
+            height={150}
+            alt="peachtechのアイコン"
+          />
+          <Typography fontWeight="bold" mt={-3}>
+            PeachTech
           </Typography>
-          <Typography fontSize={{ xs: 15, md: 25 }} mb={{ xs: 7.5, md: 15 }}>
-            PeachTechチュートリアルはこれで完了です！
+
+          <Typography
+            fontSize={{ md: 25 }}
+            mb={2}
+            mt={{ xs: 3, md: 8 }}
+            fontWeight={"bold"}
+            color={"#515151"}
+          >
+            peachtechチュートリアルお疲れ様でした！！
           </Typography>
-          <Typography fontSize={{ xs: 15, md: 25 }}>
+
+          <Typography
+            fontSize={{ md: 25 }}
+            fontWeight={"bold"}
+            color={"#515151"}
+          >
             これから一緒に頑張りましょう！！
           </Typography>
         </Box>
