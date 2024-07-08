@@ -5,7 +5,8 @@ const WebTutorialButton = () => {
   return (
     <Box position={"relative"} display={"flex"} alignItems={"center"}>
       <Button
-        variant="contained"
+        variant={"contained"}
+        href={"/section7"}
         sx={{
           bgcolor: "#3D64CA",
           borderRadius: 10,

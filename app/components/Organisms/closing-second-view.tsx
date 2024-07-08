@@ -24,12 +24,12 @@ const ClosingScondView = () => {
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          sx={{ flexFlow: "column" }}
+          flexDirection={"column"}
         >
           <Typography fontSize={{ xs: 13, md: 30 }} fontWeight={"bold"}>
             Webサイト,Webアプリ開発に興味がある方へ
           </Typography>
-          <Box bgcolor={"#CCCCCC"} width={"80vw"} height={1.5} mt={1}></Box>
+          <Box bgcolor={"#CCCCCC"} width={"80vw"} height={1.5} mt={1} />
         </Box>
 
         <Box textAlign={"center"} mt={2} px={{ xs: 3, md: 0 }}>
@@ -46,7 +46,7 @@ const ClosingScondView = () => {
           display={"flex"}
           alignItems={"center"}
           justifyContent={"center"}
-          sx={{ flexFlow: "column" }}
+          flexDirection={"column"}
         >
           <Box
             bgcolor={"#F6F4F4"}
@@ -67,12 +67,12 @@ const ClosingScondView = () => {
             興味のある方は下のボタンをクリック
           </Typography>
         </Box>
-        <Box display="flex" justifyContent="center" alignItems="center">
-          <DecorationBar transform="rotate(-30deg)" />
-          <DecorationBar transform="rotate(0deg)" />
-          <DecorationBar transform="rotate(30deg)" />
+        <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
+          <DecorationBar transform={"rotate(-30deg)"} />
+          <DecorationBar transform={"rotate(0deg)"} />
+          <DecorationBar transform={"rotate(30deg)"} />
         </Box>
-        <Box display="flex" justifyContent="center" alignItems="center">
+        <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
           <WebTutorialButton />
         </Box>
       </Box>
