@@ -13,17 +13,6 @@ const ClosingSecondView = () => {
       py={{ xs: 3, md: 4 }}
       px={{ xs: 3, md: 0 }}
     >
-      <Box textAlign="center" alignContent="center" bgcolor="#FFEFEF" pt={5}>
-        <Image
-          src="/peachtech.png"
-          width={150}
-          height={150}
-          alt="peachtechのアイコン"
-        />
-        <Typography fontWeight="bold" mt={-3}>
-          PeachTech
-        </Typography>
-      </Box>
       <Box
         bgcolor={"white"}
         boxShadow={"0.5px 1px 5px -2px gray"}
