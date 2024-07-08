@@ -33,9 +33,9 @@ const VideoArea: React.FC<VideoAreaProps> = ({ img, href, contents }) => {
           variant="contained"
           sx={{
             color: "white",
-            bgcolor: "#4468E7",
+            bgcolor: "#5A6EE1",
             "&:hover": {
-              background: "#3758CD",
+              background: "#495FDF",
             },
             px: { xs: 3, md: 4 },
             py: 1,
