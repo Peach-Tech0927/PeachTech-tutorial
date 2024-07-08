@@ -1,6 +1,5 @@
-import { Box } from "@mui/material";
-import Button from "@mui/material/Button";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import { Box, Button } from "@mui/material";
 
 const WebTutorialButton = () => {
   return (

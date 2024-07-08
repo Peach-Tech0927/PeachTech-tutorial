@@ -5,10 +5,10 @@ import WebTutorialButton from "../Atoms/web-tutorial-button";
 const ClosingScondView = () => {
   return (
     <Box
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      bgcolor="#fff7f7"
+      display={"flex"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      bgcolor={"#fff7f7"}
       py={{ xs: 3, md: 4 }}
       px={{ xs: 3, md: 0 }}
     >
@@ -16,35 +16,32 @@ const ClosingScondView = () => {
         bgcolor={"white"}
         boxShadow={"0.5px 1px 5px -2px gray"}
         borderRadius={1}
-        px={{ xs: 3, md: 40 }}
-        py={{ xs: 8, md: 10 }}
+        px={{ xs: 3, md: 10 }}
+        pt={{ xs: 3.5, md: 6 }}
+        pb={{ xs: 6, md: 8 }}
       >
-        <Typography
-          fontSize={{ xs: 13, md: 30 }}
-          fontWeight={"bold"}
-          borderBottom={"1px solid #CCCCCC"}
+        <Box
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          sx={{ flexFlow: "column" }}
         >
-          Webサイト,Webアプリ開発に興味がある方へ
-        </Typography>
-        <Box textAlign="center" alignContent="center">
-          <Typography
-            lineHeight={2}
-            fontSize={{ xs: 13, md: 16 }}
-            my={{ xs: 1, md: 3 }}
-            mt={{ xs: 2, md: 0 }}
-          >
+          <Typography fontSize={{ xs: 13, md: 30 }} fontWeight={"bold"}>
+            Webサイト,Webアプリ開発に興味がある方へ
+          </Typography>
+          <Box bgcolor={"#CCCCCC"} width={"80vw"} height={1.5} mt={1}></Box>
+        </Box>
+
+        <Box textAlign={"center"} mt={2} px={{ xs: 3, md: 0 }}>
+          <Typography lineHeight={2} fontSize={{ xs: 13, md: 16 }}>
             Webプログラミングを実践的に学べるチュートリアルを用意しています！
             <br />
             PeachTechのプログラミング未経験者の多くがwebチュートリアルから始めています！
-          </Typography>
-          <Typography
-            mt={{ xs: 5, md: 10 }}
-            mb={5}
-            fontSize={{ xs: 13, md: 16 }}
-          >
-            以下のような方にもおすすめです！
+            <br />
+            以下のような方におすすめです！
           </Typography>
         </Box>
+
         <Box
           display={"flex"}
           alignItems={"center"}
@@ -53,11 +50,11 @@ const ClosingScondView = () => {
         >
           <Box
             bgcolor={"#F6F4F4"}
-            px={{ md: 5 }}
+            px={{ md: 5, xs: 3 }}
             py={3}
-            width={{ xs: "100%", md: "50%" }}
+            mt={{ xs: 3, md: 5 }}
           >
-            <Typography ml={{ xs: 4, md: 5 }} fontSize={{ xs: 13, md: 16 }}>
+            <Typography fontSize={{ xs: 13, md: 16 }}>
               ・早くプログラミングを学びたい人
               <br />
               ・実際になにか作ってみたい人
@@ -66,11 +63,7 @@ const ClosingScondView = () => {
               <br />
             </Typography>
           </Box>
-          <Typography
-            mt={{ xs: 6, md: 8 }}
-            mb={4}
-            fontSize={{ xs: 13, md: 16 }}
-          >
+          <Typography mt={4} mb={3} fontSize={{ xs: 13, md: 16 }}>
             興味のある方は下のボタンをクリック
           </Typography>
         </Box>
