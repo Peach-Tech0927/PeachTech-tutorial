@@ -1,11 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import { ThumbnailCardBottomProps } from "../../types/types";
 
-const ThumbnailCardBottom: React.FC<ThumbnailCardBottomProps> = ({
-  title,
-  number,
-}) => {
+type TProps = {
+  title: string;
+  number: string;
+};
+
+const ThumbnailCardBottom: React.FC<TProps> = ({ title, number }) => {
   return (
     <Box display={"flex"} bgcolor={"#FF9DA7"} py={1.5}>
       <Typography color={"white"} ml={2.8} fontSize={14}>
