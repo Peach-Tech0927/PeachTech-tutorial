@@ -30,8 +30,3 @@ export type VideoPageProps = {
   buttonText: string;
   nextButtonHref: string;
 };
-
-export type ThumbnailCardBottomProps = {
-  title: string;
-  number: string;
-};

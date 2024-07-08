@@ -1,11 +1,11 @@
 import { Button } from "@mui/material";
 
-export type CustomButtonProps = {
+type TProps = {
   text: string;
   href: string;
 };
 
-const CustomButton: React.FC<CustomButtonProps> = ({ text, href }) => {
+const CustomButton: React.FC<TProps> = ({ text, href }) => {
   return (
     <Button
       variant="contained"
