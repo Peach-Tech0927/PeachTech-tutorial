@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <AppBar position="static" sx={{ bgcolor: "#FFCDCD" }}>
+    <AppBar position="static" sx={{ bgcolor: "#FFC8C9" }}>
       <Toolbar>
         <Link href="/">
           <Image
@@ -15,9 +15,10 @@ const Header = () => {
         </Link>
         <Typography
           m={{ sm: "0 auto" }}
-          color={"black"}
+          color={"#131313"}
           fontSize={{ xs: 15, md: 20 }}
           fontWeight={"bold"}
+          fontFamily={"unset"}
           letterSpacing={0.2}
         >
           PeachTechチュートリアル
