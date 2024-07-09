@@ -55,3 +55,19 @@ export const step4VideoPageData: VideoPageProps = {
   buttonText: "次へ",
   nextButtonHref: "/section5",
 };
+
+export const step7VideoPageData: VideoPageProps = {
+  step: 7,
+  title: "Webチュートリアルについての動画を見よう！",
+  detail:
+    "この動画では実際にWebサイトやWebアプリが作れるようになる、Webプログラミングのチュートリアルについて紹介しています！代表のゆせさんが作成したチュートリアルで、プログラミングの正しい勉強方法やマインドについても学べるものとなっています！",
+  img: "/video-thumbnail-4.jpeg",
+  contents: [
+    "Webチュートリアルで学べること",
+    "具体的なチュートリアル内容",
+    "始め方と取り組み方",
+  ],
+  href: "https://drive.google.com/file/d/1Z99lrCGUbnRbPz1R1Wd_s2xoK1_nOKxL/view",
+  buttonText: "完了！",
+  nextButtonHref: "/closing",
+};

@@ -14,6 +14,7 @@ const VideoPage: React.FC<VideoPageProps> = ({
   href,
   buttonText,
   nextButtonHref,
+  isNotWebTutorial = true,
 }) => {
   return (
     <Box px={{ xs: 2, md: 35 }} py={{ xs: 1.5, md: 5 }} bgcolor={"#FCEBEB"}>
@@ -23,7 +24,12 @@ const VideoPage: React.FC<VideoPageProps> = ({
         borderRadius={1}
         p={{ xs: 3, md: 6 }}
       >
-        <PageContents step={step} title={title} detail={detail} />
+        <PageContents
+          step={step}
+          title={title}
+          detail={detail}
+          isNotWebTutorial={isNotWebTutorial}
+        />
         <VideoArea img={img} contents={contents} href={href} />
         <Box
           display={"flex"}

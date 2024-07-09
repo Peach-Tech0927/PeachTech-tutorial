@@ -12,6 +12,7 @@ export type TextWithImagePageProps = {
   textWithImageArea: TextWithImageAreaProps[];
   buttonText: string;
   nextButtonHref: string;
+  isNotWebTutorial?: boolean;
 };
 
 export type TextWithImageAreaProps = {
@@ -29,4 +30,5 @@ export type VideoPageProps = {
   href: string;
   buttonText: string;
   nextButtonHref: string;
+  isNotWebTutorial?: boolean;
 };

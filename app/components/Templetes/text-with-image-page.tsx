@@ -12,6 +12,7 @@ const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
   textWithImageArea,
   buttonText,
   nextButtonHref,
+  isNotWebTutorial = true,
 }) => {
   return (
     <Box px={{ xs: 2, md: 35 }} py={{ xs: 1.5, md: 5 }} bgcolor={"#FCEBEB"}>
@@ -21,7 +22,12 @@ const TextWithImagePage: React.FC<TextWithImagePageProps> = ({
         borderRadius={1}
         p={{ xs: 3, md: 6 }}
       >
-        <PageContentArea step={step} title={title} detail={detail} />
+        <PageContentArea
+          step={step}
+          title={title}
+          detail={detail}
+          isNotWebTutorial={isNotWebTutorial}
+        />
         {textWithImageArea.map((data) => (
           <TextWithImageArea
             title={data.title}
